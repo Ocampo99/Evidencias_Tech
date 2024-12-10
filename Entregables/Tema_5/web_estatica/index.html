@@ -1,0 +1,95 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Sitio Web</h1>
+        <h2>Una breve biografía y contacto</h2>
+    </header>
+
+    <main>
+        <section id="biografia">
+            <h2>Biografía</h2>
+            <p>Hola, mi nombre es Cristian Ocampo. Soy Ingeniero de Sistemas y me encanta expandir mis conocimientos.
+            </p>
+            <img src="img/ardilla.jpg" alt="Foto personal">
+        </section>
+
+        <section id="hobbies">
+            <h2>Mis Hobbies</h2>
+            <ul>
+                <li>Leer</li>
+                <li>Viajar</li>
+                <li>Realiar ejercicio</li>
+                <li>Comer</li>
+            </ul>
+        </section>
+
+        <section id="actividades">
+            <h2>Tareas Prioritarias</h2>
+            <ol>
+                <li>Estudiar</li>
+                <li>Trabajar</li>
+                <li>Entrenar</li>
+            </ol>
+        </section>
+
+        <section id="horario">
+            <h2>Horario Semanal</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Actividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Estudiar</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>Leer un libro</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>Asistir a una conferencia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reason">Motivo de Contacto:</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <button class="centro" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cristian Ocampo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
