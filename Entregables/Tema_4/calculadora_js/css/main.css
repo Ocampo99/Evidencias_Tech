@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  /* contenedor Principal donde se encuentra el contenido */
+  .container {
+    width: 100%; /* E*/
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el titulo principal */
+
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para el menu lista no ordenada */
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Estilos paar el contenido de la lista */
+  nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+  }
+  
+/* Estilo para los enlaces dentro de la lista */
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+/* Estilo cuando el usuario pasa el cursor sobre los enlaces (hover) */
+
+  nav ul li a:hover {
+    background-color: #45a049;
+  }
+  
+  .resultados {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #resultado {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
