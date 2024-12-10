@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejemplo profesional de etiquetas HTML">
+    <meta name="keywords" content="HTML, etiquetas, desarrollo web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 4_5 pagina 2</title>
+</head>
+
+<body>
+    <header>
+        <h1>Laboratorio 4_5 Pagina 2</h1>
+        <div class="botones">
+            <button onclick="window.location.href='index.html'">Devolver</button>
+        </div>
+    </header>
+
+
+    <section>
+        <h2>Imágenes y Enlaces</h2>
+        <p>Puedes visitar <a href="https://www.elcairotravel.com.co" target="_blank">este enlace</a> para más
+            información.</p>
+        <img src="img/ElCairo.jpg" alt="Imagen de ejemplo" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+    </section>
+
+    <section>
+        <h2>Tablas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarifa 1</th>
+                    <th>Tarifa 2</th>
+                    <th>Tarifa 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$400.000</td>
+                    <td>$600.000</td>
+                    <td>$800.000</td>
+                </tr>
+                <tr>
+                    <td>$950.000</td>
+                    <td>$900.000</td>
+                    <td>$1.000.000</td>
+                </tr>
+                <tr>
+                    <td>$1.250.000</td>
+                    <td>$1.200.000</td>
+                    <td>$1.300.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Formularios/Contactenos</h2>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Videos</h2>
+        <video controls width="100%" style="border-radius: 8px;">
+            <source src="img/ElCairo.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <footer>
+        <p>© 2024 Laboratorio 4_5 - Cristian Ocampo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
