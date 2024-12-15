@@ -826,3 +826,326 @@ section.admin nav a:hover,
     page-break-after: avoid;
   }
 }
+
+
+/*Contactenos*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.contact-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #05bf2e;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #049c25;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #049c25;
+}
+
+.email-icon::before {
+  content: '\2709';
+}
+
+.location-icon::before {
+  content: '\1F4CD';
+}
+
+.phone-icon::before {
+  content: '\260E';
+}
+
+.info-item p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+
+/*quienes somos*/
+
+/* CSS ajustado para replicar el diseño de la sección \"¿Quiénes Somos?\" */
+
+#quienes-somos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.contenedor-card {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.contenedor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.contenedor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.contenedor-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: justify;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #quienes-somos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-card {
+    width: 90%;
+  }
+}
+
+
+
+/*Hoteles*/
+
+
+/* Contenedor general del módulo del hotel */
+.hotel-container {
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  /* Ancho máximo del módulo */
+  display: flex;
+  /* Flexbox para dividir imagen y contenido */
+  align-items: center;
+  /* Alinea verticalmente la información y la imagen */
+}
+
+/* Carrusel de imágenes (lado izquierdo) */
+.hotel-carousel {
+  width: 40%;
+  /* Ocupa el 40% del ancho del contenedor */
+  overflow: hidden;
+  background-color: #f5f5f5;
+  /* Fondo de respaldo */
+}
+
+.hotel-carousel img {
+  width: 100%;
+  /* Ocupa todo el ancho del carrusel */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  object-fit: cover;
+  /* Recorta la imagen si es necesario */
+}
+
+/* Contenedor de detalles (lado derecho) */
+.hotel-details {
+  width: 60%;
+  /* Ocupa el 60% del ancho del contenedor */
+  padding: 20px;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Alineación vertical */
+}
+
+/* Título del hotel */
+.hotel-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #20c997;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #cccccc;
+  text-align: left;
+}
+
+/* Información del hotel */
+.hotel-details p {
+  margin: 5px 0;
+}
+
+/* Botón de contacto */
+.hotel-details button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.hotel-details button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal (ventana emergente) */
+.modal {
+  display: none;
+  /* Oculto inicialmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  z-index: 9999;
+}
+
+/* Contenido de la ventana modal */
+.modal-content {
+  width: 90%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  /* Animación de entrada */
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  margin-bottom: 15px;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #a71d2a;
+}
+
+/* Animación de la ventana modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
